@@ -11,13 +11,13 @@ function App() {
     email: '',
   });
 
-  // Load records from localStorage on component mount
+  
   useEffect(() => {
     const storedRecords = JSON.parse(localStorage.getItem('records')) || [];
     setRecords(storedRecords);
   }, []);
 
-  // Update localStorage whenever records change
+  
   useEffect(() => {
     localStorage.setItem('records', JSON.stringify(records));
   }, [records]);
