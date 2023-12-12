@@ -1,0 +1,9 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.InputField{
+  display: flex;
+  width: 400px;
+}
